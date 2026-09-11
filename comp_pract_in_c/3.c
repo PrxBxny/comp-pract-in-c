@@ -10,6 +10,8 @@ int main()
 {
     setlocale(LC_ALL, "ru");
 
+    printf("test\n");
+
     int arr[SIZE];
     input_arr(arr, SIZE);
     print_arr(arr, SIZE);
