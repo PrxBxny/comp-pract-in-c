@@ -125,15 +125,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="arrio.h" />
-    <ClInclude Include="arr_processing.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="arrio.c" />
-    <ClCompile Include="arr_processing.c" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\comp_practicum1\comp_practicum1\arrio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\comp_practicum1\comp_practicum1\arrio.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
