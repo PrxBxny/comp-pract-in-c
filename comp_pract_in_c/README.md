@@ -1,1 +1,0 @@
-computer practice in C
