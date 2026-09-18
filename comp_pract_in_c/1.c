@@ -3,18 +3,26 @@
 #include <locale.h>
 
 
+int maximum(int a, int b)
+{
+	return (a > b) ? a : b;
+}
+
 int main()
 {
 	setlocale(LC_ALL, "Ru");
 
 	int num1, num2, num3;
 	printf("¬ведите 3 числа через пробел:\n");
-	scanf("%d %d %d", &num1, &num2, &num3);
+	if (scanf("%d %d %d", &num1, &num2, &num3) != 3) {
+		printf("ќшибка ввода чисел!\n");
+		return 1;
+	}
 
-	int maximum = max(max(num1, num2), num3);
+	int MAX = maximum(maximum(num1, num2), num3);
 	int nod = 1; // наименьший общий делитель
 
-	for (int i = 2; i < maximum; i++)
+	for (int i = 2; i <= MAX; i++)
 	{
 		if ((num1 % i == 0) && (num2 % i == 0) && (num3 % i == 0))
 		{
