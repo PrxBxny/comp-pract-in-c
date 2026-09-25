@@ -30,7 +30,7 @@ int main()
 			break;
 		}
 	}
-	printf("Наименьший общий делитель чисел: %d, %d, %d = %d", num1, num2, num3, nod);
+	printf("Наименьший общий делитель чисел: %d, %d, %d = %d\n", num1, num2, num3, nod);
 
 	return 0;
 }
